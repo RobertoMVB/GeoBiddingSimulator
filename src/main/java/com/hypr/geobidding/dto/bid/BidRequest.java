@@ -1,14 +1,23 @@
-package com.hypr.geobidding.dto.bid;
-
-import jakarta.validation.constraints.NotBlank;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.hypr.geobidding.dto.bid.BidRequestInventory;
+import com.hypr.geobidding.dto.bid.BidRequestUser;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 
 public class BidRequest {
 
-    @NotBlank
+    @NotNull
+    @JsonProperty("request_id")
     private String requestId;
-    @NotBlank
+
+    @NotNull
+    @Valid
+    @JsonProperty("user")
     private BidRequestUser bidRequestUser;
-    @NotBlank
+
+    @NotNull
+    @Valid
+    @JsonProperty("inventory")
     private BidRequestInventory bidRequestInventory;
 
     public String getRequestId() {

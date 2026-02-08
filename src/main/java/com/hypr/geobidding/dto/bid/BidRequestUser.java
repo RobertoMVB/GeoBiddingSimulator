@@ -1,12 +1,12 @@
 package com.hypr.geobidding.dto.bid;
 
-import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 public class BidRequestUser {
 
-    @NotBlank
+    @NotNull
     private Double lat;
-    @NotBlank
+    @NotNull
     private Double lon;
 
     public Double getLat() {

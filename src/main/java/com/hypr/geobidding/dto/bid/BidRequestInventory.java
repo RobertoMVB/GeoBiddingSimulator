@@ -1,15 +1,24 @@
 package com.hypr.geobidding.dto.bid;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+import java.math.BigDecimal;
 
 public class BidRequestInventory {
 
-    @NotBlank
+    @NotNull
+    @JsonProperty("publisher_id")
     private String publisherId;
-    @NotBlank
+
+    @NotNull
+    @JsonProperty("ad_format")
     private String adFormat;
-    @NotBlank
-    private Double floorPrice;
+
+    @NotNull
+    @JsonProperty("floor_price")
+    private BigDecimal floorPrice;
 
     public String getPublisherId() {
         return publisherId;
@@ -27,12 +36,11 @@ public class BidRequestInventory {
         this.adFormat = adFormat;
     }
 
-    public Double getFloorPrice() {
+    public BigDecimal getFloorPrice() {
         return floorPrice;
     }
 
-    public void setFloorPrice(Double floorPrice) {
+    public void setFloorPrice(BigDecimal floorPrice) {
         this.floorPrice = floorPrice;
     }
-
 }
