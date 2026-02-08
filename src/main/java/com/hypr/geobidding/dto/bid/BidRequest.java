@@ -1,6 +1,6 @@
+package com.hypr.geobidding.dto.bid;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.hypr.geobidding.dto.bid.BidRequestInventory;
-import com.hypr.geobidding.dto.bid.BidRequestUser;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 
