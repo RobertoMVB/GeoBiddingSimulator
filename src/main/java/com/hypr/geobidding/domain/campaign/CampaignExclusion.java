@@ -1,17 +1,24 @@
 package com.hypr.geobidding.domain.campaign;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class CampaignExclusion {
 
+    @JsonProperty("type")
     private CampaignAreaType type;
 
+    @JsonProperty("center")
     private CampaignGeoPoint center;
+
+    @JsonProperty("radius_km")
     private Double radiusKm;
 
     // vem do JSON como [[lat, lon], [lat, lon]]
+
     private List<List<Double>> coords;
 
     public CampaignAreaType getType() {

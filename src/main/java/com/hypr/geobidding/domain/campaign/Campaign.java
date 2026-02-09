@@ -1,18 +1,33 @@
 package com.hypr.geobidding.domain.campaign;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.math.BigDecimal;
 import java.util.List;
 
 public class Campaign {
 
+    @JsonProperty("campaign_id")
     private String campaignId;
+
     private String name;
+
+    @JsonProperty("budget_remaining")
     private BigDecimal budgetRemaining;
+
+    @JsonProperty("bid_price")
     private BigDecimal bidPrice;
+
+    @JsonProperty("daily_budget")
     private BigDecimal dailyBudget;
+
     private CampaignTargeting targeting;
+
     private List<CampaignExclusion> exclusions;
+
+    @JsonProperty("ad_formats")
     private List<String> adFormats;
+
     private boolean active;
 
     public String getCampaignId() {

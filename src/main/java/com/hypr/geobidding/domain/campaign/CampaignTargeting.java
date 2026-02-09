@@ -1,14 +1,20 @@
 package com.hypr.geobidding.domain.campaign;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class CampaignTargeting {
 
+    @JsonProperty("type")
     private CampaignAreaType type;
 
+    @JsonProperty("center")
     private CampaignGeoPoint center;
+
+    @JsonProperty("radius_km")
     private Double radiusKm;
 
     private List<CampaignRadiusTarget> targets;

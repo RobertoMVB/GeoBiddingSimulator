@@ -32,9 +32,10 @@ public class CampaignBidService {
                 continue;
             }
 
-            // 2️⃣ formato compatível
             if (campaign.getAdFormats() == null ||
-                    !campaign.getAdFormats().contains(requestedFormat)) {
+                    campaign.getAdFormats().stream()
+                            .noneMatch(f -> f.equalsIgnoreCase(requestedFormat.name()))
+            ) {
                 continue;
             }
 
@@ -112,6 +113,8 @@ public class CampaignBidService {
             if (exclusion.getType() == null) {
                 continue;
             }
+
+            System.out.println("Exclusion :  " + exclusion.toString());
 
             switch (exclusion.getType()) {
 
