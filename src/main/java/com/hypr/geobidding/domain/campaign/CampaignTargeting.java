@@ -3,20 +3,25 @@ package com.hypr.geobidding.domain.campaign;
 import java.util.List;
 
 public class CampaignTargeting {
-    private String type;
+    private CampaignAreaType type;
 
+    // centro da circunferencia
     private CampaignGeoPoint center;
+
+    // raio da circunferencia
     private Double radiusKm;
 
+    // Lista de centros de multiplas circunferencias
     private java.util.List<CampaignRadiusTarget> targets;
 
-    private java.util.List<java.util.List<Double>> coords;
+    // Lista de pontos do polígono
+    private java.util.List<CampaignGeoPoint> coords;
 
-    public String getType() {
+    public CampaignAreaType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(CampaignAreaType type) {
         this.type = type;
     }
 
@@ -44,11 +49,11 @@ public class CampaignTargeting {
         this.targets = targets;
     }
 
-    public List<List<Double>> getCoords() {
+    public List<CampaignGeoPoint> getCoords() {
         return coords;
     }
 
-    public void setCoords(List<List<Double>> coords) {
+    public void setCoords(List<CampaignGeoPoint> coords) {
         this.coords = coords;
     }
 }
