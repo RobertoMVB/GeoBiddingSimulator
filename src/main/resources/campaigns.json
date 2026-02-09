@@ -1,0 +1,4640 @@
+[
+  {
+    "campaign_id": "camp_001",
+    "name": "Campaign 1 - Berrini",
+    "budget_remaining": 22204.49,
+    "bid_price": 1.23,
+    "daily_budget": 2864.21,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.6167,
+        "lon": -46.6933
+      },
+      "radius_km": 7.4
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.558204,
+            -46.655
+          ],
+          [
+            -23.568,
+            -46.644312
+          ],
+          [
+            -23.577796,
+            -46.655
+          ],
+          [
+            -23.568,
+            -46.665688
+          ],
+          [
+            -23.558204,
+            -46.655
+          ]
+        ]
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.56992,
+            -46.6881
+          ],
+          [
+            -23.5778,
+            -46.679503
+          ],
+          [
+            -23.58568,
+            -46.6881
+          ],
+          [
+            -23.5778,
+            -46.696697
+          ],
+          [
+            -23.56992,
+            -46.6881
+          ]
+        ]
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5613,
+          "lon": -46.6563
+        },
+        "radius_km": 0.67
+      }
+    ],
+    "ad_formats": [
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_002",
+    "name": "Campaign 2 - Parque Ibirapuera",
+    "budget_remaining": 32557.05,
+    "bid_price": 2.42,
+    "daily_budget": 557.76,
+    "targeting": {
+      "type": "multi_radius",
+      "targets": [
+        {
+          "center": {
+            "lat": -23.6528,
+            "lon": -46.7083
+          },
+          "radius_km": 1.84
+        },
+        {
+          "center": {
+            "lat": -23.6167,
+            "lon": -46.6933
+          },
+          "radius_km": 1.16
+        }
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_003",
+    "name": "Campaign 3 - Faria Lima",
+    "budget_remaining": 32879.21,
+    "bid_price": 0.93,
+    "daily_budget": 1479.76,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.542067,
+          -46.6881
+        ],
+        [
+          -23.559934,
+          -46.654336
+        ],
+        [
+          -23.595666,
+          -46.654336
+        ],
+        [
+          -23.613533,
+          -46.6881
+        ],
+        [
+          -23.595666,
+          -46.721864
+        ],
+        [
+          -23.559934,
+          -46.721864
+        ],
+        [
+          -23.542067,
+          -46.6881
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5505,
+          "lon": -46.6333
+        },
+        "radius_km": 0.83
+      }
+    ],
+    "ad_formats": [
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_004",
+    "name": "Campaign 4 - Faria Lima",
+    "budget_remaining": 37712.83,
+    "bid_price": 1.97,
+    "daily_budget": 1428.61,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.557075,
+          -46.6881
+        ],
+        [
+          -23.571396,
+          -46.666594
+        ],
+        [
+          -23.594567,
+          -46.674809
+        ],
+        [
+          -23.594567,
+          -46.701391
+        ],
+        [
+          -23.571396,
+          -46.709606
+        ],
+        [
+          -23.557075,
+          -46.6881
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video",
+      "banner",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_005",
+    "name": "Campaign 5 - Moema",
+    "budget_remaining": 36355.12,
+    "bid_price": 0.68,
+    "daily_budget": 695.06,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.570219,
+          -46.6667
+        ],
+        [
+          -23.58676,
+          -46.635436
+        ],
+        [
+          -23.61984,
+          -46.635436
+        ],
+        [
+          -23.636381,
+          -46.6667
+        ],
+        [
+          -23.61984,
+          -46.697964
+        ],
+        [
+          -23.58676,
+          -46.697964
+        ],
+        [
+          -23.570219,
+          -46.6667
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.567,
+          "lon": -46.689
+        },
+        "radius_km": 1.32
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5427,
+          "lon": -46.5769
+        },
+        "radius_km": 1.16
+      }
+    ],
+    "ad_formats": [
+      "video",
+      "native",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_006",
+    "name": "Campaign 6 - Santana",
+    "budget_remaining": 49538.17,
+    "bid_price": 1.62,
+    "daily_budget": 2294.39,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5056,
+        "lon": -46.6289
+      },
+      "radius_km": 4.18
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video"
+    ],
+    "active": false
+  },
+  {
+    "campaign_id": "camp_007",
+    "name": "Campaign 7 - Alphaville",
+    "budget_remaining": 16892.88,
+    "bid_price": 0.37,
+    "daily_budget": 4655.26,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.485134,
+          -46.8428
+        ],
+        [
+          -23.490217,
+          -46.8332
+        ],
+        [
+          -23.500383,
+          -46.8332
+        ],
+        [
+          -23.505466,
+          -46.8428
+        ],
+        [
+          -23.500383,
+          -46.8524
+        ],
+        [
+          -23.490217,
+          -46.8524
+        ],
+        [
+          -23.485134,
+          -46.8428
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_008",
+    "name": "Campaign 8 - Shopping Eldorado",
+    "budget_remaining": 1225.12,
+    "bid_price": 1.76,
+    "daily_budget": 1637.63,
+    "targeting": {
+      "type": "multi_radius",
+      "targets": [
+        {
+          "center": {
+            "lat": -23.5056,
+            "lon": -46.6289
+          },
+          "radius_km": 1.68
+        },
+        {
+          "center": {
+            "lat": -23.5427,
+            "lon": -46.5769
+          },
+          "radius_km": 2.16
+        }
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.6167,
+          "lon": -46.6933
+        },
+        "radius_km": 0.38
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5968,
+          "lon": -46.6863
+        },
+        "radius_km": 0.34
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.560439,
+            -46.655
+          ],
+          [
+            -23.568,
+            -46.646751
+          ],
+          [
+            -23.575561,
+            -46.655
+          ],
+          [
+            -23.568,
+            -46.663249
+          ],
+          [
+            -23.560439,
+            -46.655
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "interstitial",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_009",
+    "name": "Campaign 9 - Berrini",
+    "budget_remaining": 26162.28,
+    "bid_price": 0.81,
+    "daily_budget": 3207.69,
+    "targeting": {
+      "type": "multi_radius",
+      "targets": [
+        {
+          "center": {
+            "lat": -23.5968,
+            "lon": -46.6863
+          },
+          "radius_km": 2.53
+        },
+        {
+          "center": {
+            "lat": -23.5629,
+            "lon": -46.6902
+          },
+          "radius_km": 1.35
+        }
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video",
+      "native",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_010",
+    "name": "Campaign 10 - Vila Madalena",
+    "budget_remaining": 47198.97,
+    "bid_price": 0.49,
+    "daily_budget": 3720.92,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.548242,
+          -46.6917
+        ],
+        [
+          -23.551627,
+          -46.682784
+        ],
+        [
+          -23.5598,
+          -46.679091
+        ],
+        [
+          -23.567973,
+          -46.682784
+        ],
+        [
+          -23.571358,
+          -46.6917
+        ],
+        [
+          -23.567973,
+          -46.700616
+        ],
+        [
+          -23.5598,
+          -46.704309
+        ],
+        [
+          -23.551627,
+          -46.700616
+        ],
+        [
+          -23.548242,
+          -46.6917
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "interstitial",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_011",
+    "name": "Campaign 11 - Faria Lima",
+    "budget_remaining": 22419.44,
+    "bid_price": 1.43,
+    "daily_budget": 972.13,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5778,
+        "lon": -46.6881
+      },
+      "radius_km": 8.25
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.4953,
+          "lon": -46.8428
+        },
+        "radius_km": 0.82
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.617991,
+            -46.702
+          ],
+          [
+            -23.621,
+            -46.698716
+          ],
+          [
+            -23.624009,
+            -46.702
+          ],
+          [
+            -23.621,
+            -46.705284
+          ],
+          [
+            -23.617991,
+            -46.702
+          ]
+        ]
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.556534,
+            -46.6563
+          ],
+          [
+            -23.5613,
+            -46.651101
+          ],
+          [
+            -23.566066,
+            -46.6563
+          ],
+          [
+            -23.5613,
+            -46.661499
+          ],
+          [
+            -23.556534,
+            -46.6563
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "video",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_012",
+    "name": "Campaign 12 - Shopping JK",
+    "budget_remaining": 40341.54,
+    "bid_price": 2.12,
+    "daily_budget": 3582.05,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5911,
+        "lon": -46.6798
+      },
+      "radius_km": 8.6
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.492719,
+            -46.8428
+          ],
+          [
+            -23.4953,
+            -46.839986
+          ],
+          [
+            -23.497881,
+            -46.8428
+          ],
+          [
+            -23.4953,
+            -46.845614
+          ],
+          [
+            -23.492719,
+            -46.8428
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "banner",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_013",
+    "name": "Campaign 13 - Alphaville",
+    "budget_remaining": 17581.39,
+    "bid_price": 0.64,
+    "daily_budget": 2631.58,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.461334,
+          -46.8428
+        ],
+        [
+          -23.484804,
+          -46.807576
+        ],
+        [
+          -23.522779,
+          -46.82103
+        ],
+        [
+          -23.522779,
+          -46.86457
+        ],
+        [
+          -23.484804,
+          -46.878024
+        ],
+        [
+          -23.461334,
+          -46.8428
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5505,
+          "lon": -46.6333
+        },
+        "radius_km": 0.55
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5917,
+          "lon": -46.6936
+        },
+        "radius_km": 1.02
+      }
+    ],
+    "ad_formats": [
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_014",
+    "name": "Campaign 14 - Tatuape",
+    "budget_remaining": 49272.59,
+    "bid_price": 0.91,
+    "daily_budget": 3161.58,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5427,
+        "lon": -46.5769
+      },
+      "radius_km": 2.69
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5505,
+          "lon": -46.6333
+        },
+        "radius_km": 0.22
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.580762,
+            -46.6936
+          ],
+          [
+            -23.5917,
+            -46.681665
+          ],
+          [
+            -23.602638,
+            -46.6936
+          ],
+          [
+            -23.5917,
+            -46.705535
+          ],
+          [
+            -23.580762,
+            -46.6936
+          ]
+        ]
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.558758,
+            -46.689
+          ],
+          [
+            -23.567,
+            -46.680008
+          ],
+          [
+            -23.575242,
+            -46.689
+          ],
+          [
+            -23.567,
+            -46.697992
+          ],
+          [
+            -23.558758,
+            -46.689
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "native",
+      "video",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_015",
+    "name": "Campaign 15 - Shopping Eldorado",
+    "budget_remaining": 49470.54,
+    "bid_price": 1.01,
+    "daily_budget": 3364.5,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.581095,
+          -46.6936
+        ],
+        [
+          -23.584201,
+          -46.685418
+        ],
+        [
+          -23.5917,
+          -46.682028
+        ],
+        [
+          -23.599199,
+          -46.685418
+        ],
+        [
+          -23.602305,
+          -46.6936
+        ],
+        [
+          -23.599199,
+          -46.701782
+        ],
+        [
+          -23.5917,
+          -46.705172
+        ],
+        [
+          -23.584201,
+          -46.701782
+        ],
+        [
+          -23.581095,
+          -46.6936
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_016",
+    "name": "Campaign 16 - Brooklin",
+    "budget_remaining": 20269.46,
+    "bid_price": 0.7,
+    "daily_budget": 882.3,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.6134,
+        "lon": -46.6978
+      },
+      "radius_km": 0.69
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5858,
+          "lon": -46.685
+        },
+        "radius_km": 0.26
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5427,
+          "lon": -46.5769
+        },
+        "radius_km": 0.46
+      }
+    ],
+    "ad_formats": [
+      "native",
+      "banner",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_017",
+    "name": "Campaign 17 - Faria Lima",
+    "budget_remaining": 11660.86,
+    "bid_price": 0.82,
+    "daily_budget": 3764.07,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5778,
+        "lon": -46.6881
+      },
+      "radius_km": 9.37
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.594644,
+            -46.6667
+          ],
+          [
+            -23.6033,
+            -46.657254
+          ],
+          [
+            -23.611956,
+            -46.6667
+          ],
+          [
+            -23.6033,
+            -46.676146
+          ],
+          [
+            -23.594644,
+            -46.6667
+          ]
+        ]
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.4953,
+          "lon": -46.8428
+        },
+        "radius_km": 0.78
+      }
+    ],
+    "ad_formats": [
+      "interstitial",
+      "native",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_018",
+    "name": "Campaign 18 - Alphaville",
+    "budget_remaining": 20089.2,
+    "bid_price": 1.48,
+    "daily_budget": 3886.82,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.46268,
+          -46.8428
+        ],
+        [
+          -23.47899,
+          -46.811997
+        ],
+        [
+          -23.51161,
+          -46.811997
+        ],
+        [
+          -23.52792,
+          -46.8428
+        ],
+        [
+          -23.51161,
+          -46.873603
+        ],
+        [
+          -23.47899,
+          -46.873603
+        ],
+        [
+          -23.46268,
+          -46.8428
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner",
+      "native",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_019",
+    "name": "Campaign 19 - Santo Amaro",
+    "budget_remaining": 5765.21,
+    "bid_price": 1.85,
+    "daily_budget": 3693.03,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.6528,
+        "lon": -46.7083
+      },
+      "radius_km": 4.79
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner",
+      "interstitial",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_020",
+    "name": "Campaign 20 - Parque Ibirapuera",
+    "budget_remaining": 5340.2,
+    "bid_price": 2.19,
+    "daily_budget": 2190.05,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.555697,
+          -46.6575
+        ],
+        [
+          -23.577672,
+          -46.624497
+        ],
+        [
+          -23.613229,
+          -46.637103
+        ],
+        [
+          -23.613229,
+          -46.677897
+        ],
+        [
+          -23.577672,
+          -46.690503
+        ],
+        [
+          -23.555697,
+          -46.6575
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_021",
+    "name": "Campaign 21 - Tatuape",
+    "budget_remaining": 38793.87,
+    "bid_price": 0.3,
+    "daily_budget": 1365.89,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5427,
+        "lon": -46.5769
+      },
+      "radius_km": 2.85
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.55168,
+            -46.6917
+          ],
+          [
+            -23.5598,
+            -46.682842
+          ],
+          [
+            -23.56792,
+            -46.6917
+          ],
+          [
+            -23.5598,
+            -46.700558
+          ],
+          [
+            -23.55168,
+            -46.6917
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_022",
+    "name": "Campaign 22 - Jardins",
+    "budget_remaining": 10614.29,
+    "bid_price": 1.03,
+    "daily_budget": 4383.05,
+    "targeting": {
+      "type": "multi_radius",
+      "targets": [
+        {
+          "center": {
+            "lat": -23.621,
+            "lon": -46.702
+          },
+          "radius_km": 0.9
+        },
+        {
+          "center": {
+            "lat": -23.5917,
+            "lon": -46.6936
+          },
+          "radius_km": 0.85
+        },
+        {
+          "center": {
+            "lat": -23.4953,
+            "lon": -46.8428
+          },
+          "radius_km": 1.23
+        }
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_023",
+    "name": "Campaign 23 - Moema",
+    "budget_remaining": 1622.24,
+    "bid_price": 0.16,
+    "daily_budget": 596.14,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.574157,
+          -46.6667
+        ],
+        [
+          -23.594294,
+          -46.636453
+        ],
+        [
+          -23.626877,
+          -46.648006
+        ],
+        [
+          -23.626877,
+          -46.685394
+        ],
+        [
+          -23.594294,
+          -46.696947
+        ],
+        [
+          -23.574157,
+          -46.6667
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_024",
+    "name": "Campaign 24 - Vila Madalena",
+    "budget_remaining": 4468.83,
+    "bid_price": 1.56,
+    "daily_budget": 2384.1,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.538888,
+          -46.6917
+        ],
+        [
+          -23.553338,
+          -46.670003
+        ],
+        [
+          -23.576718,
+          -46.678291
+        ],
+        [
+          -23.576718,
+          -46.705109
+        ],
+        [
+          -23.553338,
+          -46.713397
+        ],
+        [
+          -23.538888,
+          -46.6917
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.556986,
+            -46.6902
+          ],
+          [
+            -23.5629,
+            -46.683748
+          ],
+          [
+            -23.568814,
+            -46.6902
+          ],
+          [
+            -23.5629,
+            -46.696652
+          ],
+          [
+            -23.556986,
+            -46.6902
+          ]
+        ]
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.4953,
+          "lon": -46.8428
+        },
+        "radius_km": 1.49
+      }
+    ],
+    "ad_formats": [
+      "video",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_025",
+    "name": "Campaign 25 - Santana",
+    "budget_remaining": 46420.74,
+    "bid_price": 1.64,
+    "daily_budget": 3938.92,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5056,
+        "lon": -46.6289
+      },
+      "radius_km": 0.69
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "banner",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_026",
+    "name": "Campaign 26 - Brooklin",
+    "budget_remaining": 2202.28,
+    "bid_price": 0.18,
+    "daily_budget": 4133.52,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.601261,
+          -46.6978
+        ],
+        [
+          -23.607331,
+          -46.686327
+        ],
+        [
+          -23.619469,
+          -46.686327
+        ],
+        [
+          -23.625539,
+          -46.6978
+        ],
+        [
+          -23.619469,
+          -46.709273
+        ],
+        [
+          -23.607331,
+          -46.709273
+        ],
+        [
+          -23.601261,
+          -46.6978
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_027",
+    "name": "Campaign 27 - Shopping Eldorado",
+    "budget_remaining": 13187.78,
+    "bid_price": 1.02,
+    "daily_budget": 1608.75,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5917,
+        "lon": -46.6936
+      },
+      "radius_km": 6.91
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "interstitial",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_028",
+    "name": "Campaign 28 - Santana",
+    "budget_remaining": 24543.42,
+    "bid_price": 1.45,
+    "daily_budget": 3447.48,
+    "targeting": {
+      "type": "multi_radius",
+      "targets": [
+        {
+          "center": {
+            "lat": -23.4953,
+            "lon": -46.8428
+          },
+          "radius_km": 2.05
+        },
+        {
+          "center": {
+            "lat": -23.5968,
+            "lon": -46.6863
+          },
+          "radius_km": 0.51
+        },
+        {
+          "center": {
+            "lat": -23.5858,
+            "lon": -46.685
+          },
+          "radius_km": 2.02
+        }
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.557672,
+            -46.689
+          ],
+          [
+            -23.567,
+            -46.678823
+          ],
+          [
+            -23.576328,
+            -46.689
+          ],
+          [
+            -23.567,
+            -46.699177
+          ],
+          [
+            -23.557672,
+            -46.689
+          ]
+        ]
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.551863,
+            -46.6917
+          ],
+          [
+            -23.5598,
+            -46.683041
+          ],
+          [
+            -23.567737,
+            -46.6917
+          ],
+          [
+            -23.5598,
+            -46.700359
+          ],
+          [
+            -23.551863,
+            -46.6917
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "video",
+      "native",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_029",
+    "name": "Campaign 29 - Parque Ibirapuera",
+    "budget_remaining": 14446.31,
+    "bid_price": 1.84,
+    "daily_budget": 4739.94,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5875,
+        "lon": -46.6575
+      },
+      "radius_km": 8.88
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "banner"
+    ],
+    "active": false
+  },
+  {
+    "campaign_id": "camp_030",
+    "name": "Campaign 30 - Itaim Bibi",
+    "budget_remaining": 12886.38,
+    "bid_price": 2.2,
+    "daily_budget": 992.12,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.570712,
+          -46.685
+        ],
+        [
+          -23.581138,
+          -46.669343
+        ],
+        [
+          -23.598006,
+          -46.675323
+        ],
+        [
+          -23.598006,
+          -46.694677
+        ],
+        [
+          -23.581138,
+          -46.700657
+        ],
+        [
+          -23.570712,
+          -46.685
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "banner",
+      "video"
+    ],
+    "active": false
+  },
+  {
+    "campaign_id": "camp_031",
+    "name": "Campaign 31 - Shopping Iguatemi",
+    "budget_remaining": 12455.56,
+    "bid_price": 0.25,
+    "daily_budget": 1365.64,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.546301,
+          -46.689
+        ],
+        [
+          -23.552363,
+          -46.673031
+        ],
+        [
+          -23.567,
+          -46.666417
+        ],
+        [
+          -23.581637,
+          -46.673031
+        ],
+        [
+          -23.587699,
+          -46.689
+        ],
+        [
+          -23.581637,
+          -46.704969
+        ],
+        [
+          -23.567,
+          -46.711583
+        ],
+        [
+          -23.552363,
+          -46.704969
+        ],
+        [
+          -23.546301,
+          -46.689
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_032",
+    "name": "Campaign 32 - Alphaville",
+    "budget_remaining": 18405.84,
+    "bid_price": 1.86,
+    "daily_budget": 2637.79,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.479788,
+          -46.8428
+        ],
+        [
+          -23.487544,
+          -46.828152
+        ],
+        [
+          -23.503056,
+          -46.828152
+        ],
+        [
+          -23.510812,
+          -46.8428
+        ],
+        [
+          -23.503056,
+          -46.857448
+        ],
+        [
+          -23.487544,
+          -46.857448
+        ],
+        [
+          -23.479788,
+          -46.8428
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "banner",
+      "interstitial"
+    ],
+    "active": false
+  },
+  {
+    "campaign_id": "camp_033",
+    "name": "Campaign 33 - Shopping Eldorado",
+    "budget_remaining": 7799.33,
+    "bid_price": 2.34,
+    "daily_budget": 1758.55,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5917,
+        "lon": -46.6936
+      },
+      "radius_km": 6.13
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_034",
+    "name": "Campaign 34 - Moema",
+    "budget_remaining": 27907.88,
+    "bid_price": 0.57,
+    "daily_budget": 2823.13,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.588059,
+          -46.6667
+        ],
+        [
+          -23.59568,
+          -46.652296
+        ],
+        [
+          -23.61092,
+          -46.652296
+        ],
+        [
+          -23.618541,
+          -46.6667
+        ],
+        [
+          -23.61092,
+          -46.681104
+        ],
+        [
+          -23.59568,
+          -46.681104
+        ],
+        [
+          -23.588059,
+          -46.6667
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.612585,
+            -46.702
+          ],
+          [
+            -23.621,
+            -46.692815
+          ],
+          [
+            -23.629415,
+            -46.702
+          ],
+          [
+            -23.621,
+            -46.711185
+          ],
+          [
+            -23.612585,
+            -46.702
+          ]
+        ]
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.6528,
+          "lon": -46.7083
+        },
+        "radius_km": 0.34
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.493033,
+            -46.8428
+          ],
+          [
+            -23.4953,
+            -46.840328
+          ],
+          [
+            -23.497567,
+            -46.8428
+          ],
+          [
+            -23.4953,
+            -46.845272
+          ],
+          [
+            -23.493033,
+            -46.8428
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "banner",
+      "native",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_035",
+    "name": "Campaign 35 - Brooklin",
+    "budget_remaining": 35536.46,
+    "bid_price": 2.37,
+    "daily_budget": 4899.41,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.6134,
+        "lon": -46.6978
+      },
+      "radius_km": 1.71
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.557876,
+            -46.6902
+          ],
+          [
+            -23.5629,
+            -46.684719
+          ],
+          [
+            -23.567924,
+            -46.6902
+          ],
+          [
+            -23.5629,
+            -46.695681
+          ],
+          [
+            -23.557876,
+            -46.6902
+          ]
+        ]
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5056,
+          "lon": -46.6289
+        },
+        "radius_km": 0.3
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.545065,
+            -46.6333
+          ],
+          [
+            -23.5505,
+            -46.627371
+          ],
+          [
+            -23.555935,
+            -46.6333
+          ],
+          [
+            -23.5505,
+            -46.639229
+          ],
+          [
+            -23.545065,
+            -46.6333
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "native",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_036",
+    "name": "Campaign 36 - Pinheiros",
+    "budget_remaining": 33323.23,
+    "bid_price": 0.77,
+    "daily_budget": 1031.36,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5629,
+        "lon": -46.6902
+      },
+      "radius_km": 3.68
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_037",
+    "name": "Campaign 37 - Brooklin",
+    "budget_remaining": 37353.29,
+    "bid_price": 0.19,
+    "daily_budget": 2283.15,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.6134,
+        "lon": -46.6978
+      },
+      "radius_km": 6.55
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5056,
+          "lon": -46.6289
+        },
+        "radius_km": 0.45
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5858,
+          "lon": -46.685
+        },
+        "radius_km": 1.04
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.581097,
+            -46.6575
+          ],
+          [
+            -23.5875,
+            -46.650513
+          ],
+          [
+            -23.593903,
+            -46.6575
+          ],
+          [
+            -23.5875,
+            -46.664487
+          ],
+          [
+            -23.581097,
+            -46.6575
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "interstitial",
+      "native",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_038",
+    "name": "Campaign 38 - Vila Madalena",
+    "budget_remaining": 30153.05,
+    "bid_price": 0.35,
+    "daily_budget": 1931.38,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.526292,
+          -46.6917
+        ],
+        [
+          -23.536106,
+          -46.665852
+        ],
+        [
+          -23.5598,
+          -46.655145
+        ],
+        [
+          -23.583494,
+          -46.665852
+        ],
+        [
+          -23.593308,
+          -46.6917
+        ],
+        [
+          -23.583494,
+          -46.717548
+        ],
+        [
+          -23.5598,
+          -46.728255
+        ],
+        [
+          -23.536106,
+          -46.717548
+        ],
+        [
+          -23.526292,
+          -46.6917
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video",
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_039",
+    "name": "Campaign 39 - Vila Olimpia",
+    "budget_remaining": 29172.13,
+    "bid_price": 1.56,
+    "daily_budget": 1238.84,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5968,
+        "lon": -46.6863
+      },
+      "radius_km": 3.85
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_040",
+    "name": "Campaign 40 - Berrini",
+    "budget_remaining": 28201.5,
+    "bid_price": 1.7,
+    "daily_budget": 2411.27,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.579118,
+          -46.6933
+        ],
+        [
+          -23.597909,
+          -46.657778
+        ],
+        [
+          -23.635491,
+          -46.657778
+        ],
+        [
+          -23.654282,
+          -46.6933
+        ],
+        [
+          -23.635491,
+          -46.728822
+        ],
+        [
+          -23.597909,
+          -46.728822
+        ],
+        [
+          -23.579118,
+          -46.6933
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "banner",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_041",
+    "name": "Campaign 41 - Jardins",
+    "budget_remaining": 1380.87,
+    "bid_price": 1.23,
+    "daily_budget": 4232.53,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.568,
+        "lon": -46.655
+      },
+      "radius_km": 5.2
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner",
+      "native"
+    ],
+    "active": false
+  },
+  {
+    "campaign_id": "camp_042",
+    "name": "Campaign 42 - Shopping JK",
+    "budget_remaining": 21560.44,
+    "bid_price": 1.59,
+    "daily_budget": 4494.65,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5911,
+        "lon": -46.6798
+      },
+      "radius_km": 9.9
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.547632,
+            -46.6917
+          ],
+          [
+            -23.5598,
+            -46.678425
+          ],
+          [
+            -23.571968,
+            -46.6917
+          ],
+          [
+            -23.5598,
+            -46.704975
+          ],
+          [
+            -23.547632,
+            -46.6917
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "native",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_043",
+    "name": "Campaign 43 - Vila Olimpia",
+    "budget_remaining": 40949.72,
+    "bid_price": 1.03,
+    "daily_budget": 1697.34,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5968,
+        "lon": -46.6863
+      },
+      "radius_km": 1.82
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "interstitial",
+      "native",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_044",
+    "name": "Campaign 44 - Centro",
+    "budget_remaining": 26668.73,
+    "bid_price": 0.73,
+    "daily_budget": 2835.4,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5505,
+        "lon": -46.6333
+      },
+      "radius_km": 0.78
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_045",
+    "name": "Campaign 45 - Shopping Eldorado",
+    "budget_remaining": 17825.76,
+    "bid_price": 0.89,
+    "daily_budget": 3385.65,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.564221,
+          -46.6936
+        ],
+        [
+          -23.583208,
+          -46.665082
+        ],
+        [
+          -23.613931,
+          -46.675975
+        ],
+        [
+          -23.613931,
+          -46.711225
+        ],
+        [
+          -23.583208,
+          -46.722118
+        ],
+        [
+          -23.564221,
+          -46.6936
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "video",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_046",
+    "name": "Campaign 46 - Shopping Eldorado",
+    "budget_remaining": 36831.34,
+    "bid_price": 1.58,
+    "daily_budget": 2819.99,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.575465,
+          -46.6936
+        ],
+        [
+          -23.58022,
+          -46.681073
+        ],
+        [
+          -23.5917,
+          -46.675884
+        ],
+        [
+          -23.60318,
+          -46.681073
+        ],
+        [
+          -23.607935,
+          -46.6936
+        ],
+        [
+          -23.60318,
+          -46.706127
+        ],
+        [
+          -23.5917,
+          -46.711316
+        ],
+        [
+          -23.58022,
+          -46.706127
+        ],
+        [
+          -23.575465,
+          -46.6936
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video",
+      "interstitial",
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_047",
+    "name": "Campaign 47 - Morumbi",
+    "budget_remaining": 46878.69,
+    "bid_price": 1.76,
+    "daily_budget": 4043.83,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.621,
+        "lon": -46.702
+      },
+      "radius_km": 6.48
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "banner",
+      "video"
+    ],
+    "active": false
+  },
+  {
+    "campaign_id": "camp_048",
+    "name": "Campaign 48 - Morumbi",
+    "budget_remaining": 49977.81,
+    "bid_price": 1.78,
+    "daily_budget": 3399.85,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.602044,
+          -46.702
+        ],
+        [
+          -23.611522,
+          -46.684082
+        ],
+        [
+          -23.630478,
+          -46.684082
+        ],
+        [
+          -23.639956,
+          -46.702
+        ],
+        [
+          -23.630478,
+          -46.719918
+        ],
+        [
+          -23.611522,
+          -46.719918
+        ],
+        [
+          -23.602044,
+          -46.702
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.584677,
+            -46.6798
+          ],
+          [
+            -23.5911,
+            -46.672791
+          ],
+          [
+            -23.597523,
+            -46.6798
+          ],
+          [
+            -23.5911,
+            -46.686809
+          ],
+          [
+            -23.584677,
+            -46.6798
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "native",
+      "banner",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_049",
+    "name": "Campaign 49 - Av Paulista",
+    "budget_remaining": 10477.08,
+    "bid_price": 0.47,
+    "daily_budget": 3453.07,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5613,
+        "lon": -46.6563
+      },
+      "radius_km": 5.52
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "interstitial",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_050",
+    "name": "Campaign 50 - Vila Olimpia",
+    "budget_remaining": 15183.11,
+    "bid_price": 0.2,
+    "daily_budget": 3697.03,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.563939,
+          -46.6863
+        ],
+        [
+          -23.586645,
+          -46.652196
+        ],
+        [
+          -23.623385,
+          -46.665222
+        ],
+        [
+          -23.623385,
+          -46.707378
+        ],
+        [
+          -23.586645,
+          -46.720404
+        ],
+        [
+          -23.563939,
+          -46.6863
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_051",
+    "name": "Campaign 51 - Shopping Eldorado",
+    "budget_remaining": 45117.44,
+    "bid_price": 2.4,
+    "daily_budget": 830.13,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.564565,
+          -46.6936
+        ],
+        [
+          -23.572513,
+          -46.672663
+        ],
+        [
+          -23.5917,
+          -46.66399
+        ],
+        [
+          -23.610887,
+          -46.672663
+        ],
+        [
+          -23.618835,
+          -46.6936
+        ],
+        [
+          -23.610887,
+          -46.714537
+        ],
+        [
+          -23.5917,
+          -46.72321
+        ],
+        [
+          -23.572513,
+          -46.714537
+        ],
+        [
+          -23.564565,
+          -46.6936
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5613,
+          "lon": -46.6563
+        },
+        "radius_km": 1.25
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5427,
+          "lon": -46.5769
+        },
+        "radius_km": 0.91
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.650874,
+            -46.7083
+          ],
+          [
+            -23.6528,
+            -46.706198
+          ],
+          [
+            -23.654726,
+            -46.7083
+          ],
+          [
+            -23.6528,
+            -46.710402
+          ],
+          [
+            -23.650874,
+            -46.7083
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "banner",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_052",
+    "name": "Campaign 52 - Shopping JK",
+    "budget_remaining": 47622.08,
+    "bid_price": 2.28,
+    "daily_budget": 3512.54,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5911,
+        "lon": -46.6798
+      },
+      "radius_km": 6.83
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner",
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_053",
+    "name": "Campaign 53 - Vila Madalena",
+    "budget_remaining": 32566.51,
+    "bid_price": 1.3,
+    "daily_budget": 1859.63,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.529083,
+          -46.6917
+        ],
+        [
+          -23.53808,
+          -46.668005
+        ],
+        [
+          -23.5598,
+          -46.65819
+        ],
+        [
+          -23.58152,
+          -46.668005
+        ],
+        [
+          -23.590517,
+          -46.6917
+        ],
+        [
+          -23.58152,
+          -46.715395
+        ],
+        [
+          -23.5598,
+          -46.72521
+        ],
+        [
+          -23.53808,
+          -46.715395
+        ],
+        [
+          -23.529083,
+          -46.6917
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5917,
+          "lon": -46.6936
+        },
+        "radius_km": 1.03
+      }
+    ],
+    "ad_formats": [
+      "interstitial",
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_054",
+    "name": "Campaign 54 - Santo Amaro",
+    "budget_remaining": 40611.42,
+    "bid_price": 1.79,
+    "daily_budget": 1977.32,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.6528,
+        "lon": -46.7083
+      },
+      "radius_km": 4.77
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "interstitial",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_055",
+    "name": "Campaign 55 - Santo Amaro",
+    "budget_remaining": 27119.84,
+    "bid_price": 1.31,
+    "daily_budget": 2942.84,
+    "targeting": {
+      "type": "multi_radius",
+      "targets": [
+        {
+          "center": {
+            "lat": -23.5875,
+            "lon": -46.6575
+          },
+          "radius_km": 0.62
+        },
+        {
+          "center": {
+            "lat": -23.5629,
+            "lon": -46.6902
+          },
+          "radius_km": 2.01
+        }
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner",
+      "interstitial",
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_056",
+    "name": "Campaign 56 - Santo Amaro",
+    "budget_remaining": 36252.98,
+    "bid_price": 0.26,
+    "daily_budget": 2282.61,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.61786,
+          -46.7083
+        ],
+        [
+          -23.642003,
+          -46.672022
+        ],
+        [
+          -23.681067,
+          -46.685879
+        ],
+        [
+          -23.681067,
+          -46.730721
+        ],
+        [
+          -23.642003,
+          -46.744578
+        ],
+        [
+          -23.61786,
+          -46.7083
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.621,
+          "lon": -46.702
+        },
+        "radius_km": 0.8
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.561836,
+            -46.655
+          ],
+          [
+            -23.568,
+            -46.648276
+          ],
+          [
+            -23.574164,
+            -46.655
+          ],
+          [
+            -23.568,
+            -46.661724
+          ],
+          [
+            -23.561836,
+            -46.655
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_057",
+    "name": "Campaign 57 - Av Paulista",
+    "budget_remaining": 24436.02,
+    "bid_price": 0.6,
+    "daily_budget": 2511.96,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.547888,
+          -46.6563
+        ],
+        [
+          -23.551816,
+          -46.645954
+        ],
+        [
+          -23.5613,
+          -46.641668
+        ],
+        [
+          -23.570784,
+          -46.645954
+        ],
+        [
+          -23.574712,
+          -46.6563
+        ],
+        [
+          -23.570784,
+          -46.666646
+        ],
+        [
+          -23.5613,
+          -46.670932
+        ],
+        [
+          -23.551816,
+          -46.666646
+        ],
+        [
+          -23.547888,
+          -46.6563
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.547289,
+            -46.6917
+          ],
+          [
+            -23.5598,
+            -46.678051
+          ],
+          [
+            -23.572311,
+            -46.6917
+          ],
+          [
+            -23.5598,
+            -46.705349
+          ],
+          [
+            -23.547289,
+            -46.6917
+          ]
+        ]
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.55061,
+            -46.6917
+          ],
+          [
+            -23.5598,
+            -46.681674
+          ],
+          [
+            -23.56899,
+            -46.6917
+          ],
+          [
+            -23.5598,
+            -46.701726
+          ],
+          [
+            -23.55061,
+            -46.6917
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_058",
+    "name": "Campaign 58 - Alphaville",
+    "budget_remaining": 13138.95,
+    "bid_price": 0.83,
+    "daily_budget": 1700.18,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.4953,
+        "lon": -46.8428
+      },
+      "radius_km": 7.58
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native"
+    ],
+    "active": false
+  },
+  {
+    "campaign_id": "camp_059",
+    "name": "Campaign 59 - Santana",
+    "budget_remaining": 20288.54,
+    "bid_price": 0.93,
+    "daily_budget": 2637.99,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.491789,
+          -46.6289
+        ],
+        [
+          -23.498694,
+          -46.615857
+        ],
+        [
+          -23.512506,
+          -46.615857
+        ],
+        [
+          -23.519411,
+          -46.6289
+        ],
+        [
+          -23.512506,
+          -46.641943
+        ],
+        [
+          -23.498694,
+          -46.641943
+        ],
+        [
+          -23.491789,
+          -46.6289
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_060",
+    "name": "Campaign 60 - Santo Amaro",
+    "budget_remaining": 10768.81,
+    "bid_price": 1.67,
+    "daily_budget": 2073.47,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.626865,
+          -46.7083
+        ],
+        [
+          -23.644786,
+          -46.681372
+        ],
+        [
+          -23.673782,
+          -46.691657
+        ],
+        [
+          -23.673782,
+          -46.724943
+        ],
+        [
+          -23.644786,
+          -46.735228
+        ],
+        [
+          -23.626865,
+          -46.7083
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "banner"
+    ],
+    "active": false
+  },
+  {
+    "campaign_id": "camp_061",
+    "name": "Campaign 61 - Vila Olimpia",
+    "budget_remaining": 12709.12,
+    "bid_price": 2.31,
+    "daily_budget": 1381.22,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.577406,
+          -46.6863
+        ],
+        [
+          -23.590807,
+          -46.666172
+        ],
+        [
+          -23.61249,
+          -46.67386
+        ],
+        [
+          -23.61249,
+          -46.69874
+        ],
+        [
+          -23.590807,
+          -46.706428
+        ],
+        [
+          -23.577406,
+          -46.6863
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.580972,
+            -46.6575
+          ],
+          [
+            -23.5875,
+            -46.650377
+          ],
+          [
+            -23.594028,
+            -46.6575
+          ],
+          [
+            -23.5875,
+            -46.664623
+          ],
+          [
+            -23.580972,
+            -46.6575
+          ]
+        ]
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.578568,
+            -46.6936
+          ],
+          [
+            -23.5917,
+            -46.679271
+          ],
+          [
+            -23.604832,
+            -46.6936
+          ],
+          [
+            -23.5917,
+            -46.707929
+          ],
+          [
+            -23.578568,
+            -46.6936
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "video",
+      "interstitial",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_062",
+    "name": "Campaign 62 - Vila Olimpia",
+    "budget_remaining": 12968.76,
+    "bid_price": 2.35,
+    "daily_budget": 2367.05,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.58135,
+          -46.6863
+        ],
+        [
+          -23.589075,
+          -46.671699
+        ],
+        [
+          -23.604525,
+          -46.671699
+        ],
+        [
+          -23.61225,
+          -46.6863
+        ],
+        [
+          -23.604525,
+          -46.700901
+        ],
+        [
+          -23.589075,
+          -46.700901
+        ],
+        [
+          -23.58135,
+          -46.6863
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "banner",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_063",
+    "name": "Campaign 63 - Av Paulista",
+    "budget_remaining": 26073.27,
+    "bid_price": 1.95,
+    "daily_budget": 4492.05,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.543439,
+          -46.6563
+        ],
+        [
+          -23.54867,
+          -46.642522
+        ],
+        [
+          -23.5613,
+          -46.636815
+        ],
+        [
+          -23.57393,
+          -46.642522
+        ],
+        [
+          -23.579161,
+          -46.6563
+        ],
+        [
+          -23.57393,
+          -46.670078
+        ],
+        [
+          -23.5613,
+          -46.675785
+        ],
+        [
+          -23.54867,
+          -46.670078
+        ],
+        [
+          -23.543439,
+          -46.6563
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.590433,
+            -46.6667
+          ],
+          [
+            -23.6033,
+            -46.652658
+          ],
+          [
+            -23.616167,
+            -46.6667
+          ],
+          [
+            -23.6033,
+            -46.680742
+          ],
+          [
+            -23.590433,
+            -46.6667
+          ]
+        ]
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.6167,
+          "lon": -46.6933
+        },
+        "radius_km": 1.31
+      }
+    ],
+    "ad_formats": [
+      "interstitial",
+      "banner",
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_064",
+    "name": "Campaign 64 - Jardins",
+    "budget_remaining": 17476.4,
+    "bid_price": 0.58,
+    "daily_budget": 3917.68,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.568,
+        "lon": -46.655
+      },
+      "radius_km": 6.23
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_065",
+    "name": "Campaign 65 - Shopping Eldorado",
+    "budget_remaining": 38985.37,
+    "bid_price": 1.88,
+    "daily_budget": 4837.94,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.564295,
+          -46.6936
+        ],
+        [
+          -23.572321,
+          -46.672454
+        ],
+        [
+          -23.5917,
+          -46.663695
+        ],
+        [
+          -23.611079,
+          -46.672454
+        ],
+        [
+          -23.619105,
+          -46.6936
+        ],
+        [
+          -23.611079,
+          -46.714746
+        ],
+        [
+          -23.5917,
+          -46.723505
+        ],
+        [
+          -23.572321,
+          -46.714746
+        ],
+        [
+          -23.564295,
+          -46.6936
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.575697,
+            -46.6881
+          ],
+          [
+            -23.5778,
+            -46.685805
+          ],
+          [
+            -23.579903,
+            -46.6881
+          ],
+          [
+            -23.5778,
+            -46.690395
+          ],
+          [
+            -23.575697,
+            -46.6881
+          ]
+        ]
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.591787,
+            -46.6863
+          ],
+          [
+            -23.5968,
+            -46.680829
+          ],
+          [
+            -23.601813,
+            -46.6863
+          ],
+          [
+            -23.5968,
+            -46.691771
+          ],
+          [
+            -23.591787,
+            -46.6863
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "interstitial",
+      "native",
+      "video"
+    ],
+    "active": false
+  },
+  {
+    "campaign_id": "camp_066",
+    "name": "Campaign 66 - Shopping Eldorado",
+    "budget_remaining": 30228.58,
+    "bid_price": 1.5,
+    "daily_budget": 4196.96,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5917,
+        "lon": -46.6936
+      },
+      "radius_km": 2.15
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.592238,
+            -46.6667
+          ],
+          [
+            -23.6033,
+            -46.654628
+          ],
+          [
+            -23.614362,
+            -46.6667
+          ],
+          [
+            -23.6033,
+            -46.678772
+          ],
+          [
+            -23.592238,
+            -46.6667
+          ]
+        ]
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.600149,
+            -46.6978
+          ],
+          [
+            -23.6134,
+            -46.683338
+          ],
+          [
+            -23.626651,
+            -46.6978
+          ],
+          [
+            -23.6134,
+            -46.712262
+          ],
+          [
+            -23.600149,
+            -46.6978
+          ]
+        ]
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5911,
+          "lon": -46.6798
+        },
+        "radius_km": 0.65
+      }
+    ],
+    "ad_formats": [
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_067",
+    "name": "Campaign 67 - Santo Amaro",
+    "budget_remaining": 18883.95,
+    "bid_price": 1.55,
+    "daily_budget": 4806.6,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.6528,
+        "lon": -46.7083
+      },
+      "radius_km": 6.07
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_068",
+    "name": "Campaign 68 - Brooklin",
+    "budget_remaining": 10662.72,
+    "bid_price": 1.49,
+    "daily_budget": 4642.43,
+    "targeting": {
+      "type": "multi_radius",
+      "targets": [
+        {
+          "center": {
+            "lat": -23.5598,
+            "lon": -46.6917
+          },
+          "radius_km": 2.62
+        },
+        {
+          "center": {
+            "lat": -23.5778,
+            "lon": -46.6881
+          },
+          "radius_km": 1.12
+        },
+        {
+          "center": {
+            "lat": -23.5598,
+            "lon": -46.6917
+          },
+          "radius_km": 2.74
+        }
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_069",
+    "name": "Campaign 69 - Faria Lima",
+    "budget_remaining": 1341.24,
+    "bid_price": 1.42,
+    "daily_budget": 2080.66,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5778,
+        "lon": -46.6881
+      },
+      "radius_km": 1.27
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner",
+      "native"
+    ],
+    "active": false
+  },
+  {
+    "campaign_id": "camp_070",
+    "name": "Campaign 70 - Av Paulista",
+    "budget_remaining": 22888.62,
+    "bid_price": 0.11,
+    "daily_budget": 3813.9,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5613,
+        "lon": -46.6563
+      },
+      "radius_km": 0.67
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "interstitial",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_071",
+    "name": "Campaign 71 - Morumbi",
+    "budget_remaining": 23139.78,
+    "bid_price": 2.45,
+    "daily_budget": 4945.82,
+    "targeting": {
+      "type": "multi_radius",
+      "targets": [
+        {
+          "center": {
+            "lat": -23.5427,
+            "lon": -46.5769
+          },
+          "radius_km": 2.41
+        },
+        {
+          "center": {
+            "lat": -23.567,
+            "lon": -46.689
+          },
+          "radius_km": 1.54
+        }
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.556094,
+            -46.689
+          ],
+          [
+            -23.567,
+            -46.677102
+          ],
+          [
+            -23.577906,
+            -46.689
+          ],
+          [
+            -23.567,
+            -46.700898
+          ],
+          [
+            -23.556094,
+            -46.689
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_072",
+    "name": "Campaign 72 - Shopping JK",
+    "budget_remaining": 31344.85,
+    "bid_price": 1.17,
+    "daily_budget": 2285.15,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5911,
+        "lon": -46.6798
+      },
+      "radius_km": 8.77
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.567,
+          "lon": -46.689
+        },
+        "radius_km": 0.97
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.591451,
+            -46.6667
+          ],
+          [
+            -23.6033,
+            -46.653769
+          ],
+          [
+            -23.615149,
+            -46.6667
+          ],
+          [
+            -23.6033,
+            -46.679631
+          ],
+          [
+            -23.591451,
+            -46.6667
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "banner",
+      "video",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_073",
+    "name": "Campaign 73 - Av Paulista",
+    "budget_remaining": 39434.99,
+    "bid_price": 0.79,
+    "daily_budget": 1734.72,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5613,
+        "lon": -46.6563
+      },
+      "radius_km": 6.35
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video",
+      "interstitial",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_074",
+    "name": "Campaign 74 - Brooklin",
+    "budget_remaining": 19912.9,
+    "bid_price": 1.11,
+    "daily_budget": 2422.15,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.6134,
+        "lon": -46.6978
+      },
+      "radius_km": 1.12
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5629,
+          "lon": -46.6902
+        },
+        "radius_km": 0.86
+      }
+    ],
+    "ad_formats": [
+      "interstitial",
+      "native",
+      "video"
+    ],
+    "active": false
+  },
+  {
+    "campaign_id": "camp_075",
+    "name": "Campaign 75 - Vila Madalena",
+    "budget_remaining": 43790.23,
+    "bid_price": 0.56,
+    "daily_budget": 2487.08,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.540399,
+          -46.6917
+        ],
+        [
+          -23.553805,
+          -46.67157
+        ],
+        [
+          -23.575496,
+          -46.679259
+        ],
+        [
+          -23.575496,
+          -46.704141
+        ],
+        [
+          -23.553805,
+          -46.71183
+        ],
+        [
+          -23.540399,
+          -46.6917
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_076",
+    "name": "Campaign 76 - Shopping Iguatemi",
+    "budget_remaining": 46580.22,
+    "bid_price": 1.81,
+    "daily_budget": 3899.24,
+    "targeting": {
+      "type": "multi_radius",
+      "targets": [
+        {
+          "center": {
+            "lat": -23.5778,
+            "lon": -46.6881
+          },
+          "radius_km": 2.76
+        },
+        {
+          "center": {
+            "lat": -23.6134,
+            "lon": -46.6978
+          },
+          "radius_km": 2.24
+        },
+        {
+          "center": {
+            "lat": -23.6528,
+            "lon": -46.7083
+          },
+          "radius_km": 2.34
+        },
+        {
+          "center": {
+            "lat": -23.5968,
+            "lon": -46.6863
+          },
+          "radius_km": 2.03
+        }
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_077",
+    "name": "Campaign 77 - Vila Olimpia",
+    "budget_remaining": 34397.56,
+    "bid_price": 1.91,
+    "daily_budget": 1530.74,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.562325,
+          -46.6863
+        ],
+        [
+          -23.572423,
+          -46.659699
+        ],
+        [
+          -23.5968,
+          -46.64868
+        ],
+        [
+          -23.621177,
+          -46.659699
+        ],
+        [
+          -23.631275,
+          -46.6863
+        ],
+        [
+          -23.621177,
+          -46.712901
+        ],
+        [
+          -23.5968,
+          -46.72392
+        ],
+        [
+          -23.572423,
+          -46.712901
+        ],
+        [
+          -23.562325,
+          -46.6863
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.6528,
+          "lon": -46.7083
+        },
+        "radius_km": 0.62
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.6167,
+          "lon": -46.6933
+        },
+        "radius_km": 1.34
+      }
+    ],
+    "ad_formats": [
+      "banner",
+      "video",
+      "native"
+    ],
+    "active": false
+  },
+  {
+    "campaign_id": "camp_078",
+    "name": "Campaign 78 - Morumbi",
+    "budget_remaining": 46034.89,
+    "bid_price": 1.77,
+    "daily_budget": 4922.0,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.621,
+        "lon": -46.702
+      },
+      "radius_km": 6.15
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "interstitial",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_079",
+    "name": "Campaign 79 - Shopping Iguatemi",
+    "budget_remaining": 35731.21,
+    "bid_price": 0.25,
+    "daily_budget": 1208.98,
+    "targeting": {
+      "type": "multi_radius",
+      "targets": [
+        {
+          "center": {
+            "lat": -23.6528,
+            "lon": -46.7083
+          },
+          "radius_km": 0.56
+        },
+        {
+          "center": {
+            "lat": -23.5629,
+            "lon": -46.6902
+          },
+          "radius_km": 2.81
+        },
+        {
+          "center": {
+            "lat": -23.5505,
+            "lon": -46.6333
+          },
+          "radius_km": 2.94
+        }
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5858,
+          "lon": -46.685
+        },
+        "radius_km": 0.94
+      }
+    ],
+    "ad_formats": [
+      "interstitial",
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_080",
+    "name": "Campaign 80 - Parque Ibirapuera",
+    "budget_remaining": 29723.79,
+    "bid_price": 2.34,
+    "daily_budget": 2102.3,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5875,
+        "lon": -46.6575
+      },
+      "radius_km": 2.16
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_081",
+    "name": "Campaign 81 - Berrini",
+    "budget_remaining": 18739.3,
+    "bid_price": 0.8,
+    "daily_budget": 4467.83,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.6167,
+        "lon": -46.6933
+      },
+      "radius_km": 1.63
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "interstitial",
+      "video",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_082",
+    "name": "Campaign 82 - Parque Ibirapuera",
+    "budget_remaining": 4013.01,
+    "bid_price": 0.12,
+    "daily_budget": 2180.31,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5875,
+        "lon": -46.6575
+      },
+      "radius_km": 4.7
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_083",
+    "name": "Campaign 83 - Centro",
+    "budget_remaining": 24995.17,
+    "bid_price": 0.31,
+    "daily_budget": 3172.98,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.537471,
+          -46.6333
+        ],
+        [
+          -23.546474,
+          -46.619783
+        ],
+        [
+          -23.56104,
+          -46.624946
+        ],
+        [
+          -23.56104,
+          -46.641654
+        ],
+        [
+          -23.546474,
+          -46.646817
+        ],
+        [
+          -23.537471,
+          -46.6333
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "video",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_084",
+    "name": "Campaign 84 - Faria Lima",
+    "budget_remaining": 23362.06,
+    "bid_price": 1.95,
+    "daily_budget": 1945.79,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5778,
+        "lon": -46.6881
+      },
+      "radius_km": 3.45
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "interstitial",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_085",
+    "name": "Campaign 85 - Brooklin",
+    "budget_remaining": 43919.29,
+    "bid_price": 0.17,
+    "daily_budget": 3496.2,
+    "targeting": {
+      "type": "multi_radius",
+      "targets": [
+        {
+          "center": {
+            "lat": -23.5056,
+            "lon": -46.6289
+          },
+          "radius_km": 2.8
+        },
+        {
+          "center": {
+            "lat": -23.5598,
+            "lon": -46.6917
+          },
+          "radius_km": 2.16
+        },
+        {
+          "center": {
+            "lat": -23.5917,
+            "lon": -46.6936
+          },
+          "radius_km": 0.93
+        },
+        {
+          "center": {
+            "lat": -23.567,
+            "lon": -46.689
+          },
+          "radius_km": 2.48
+        }
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.4953,
+          "lon": -46.8428
+        },
+        "radius_km": 0.7
+      }
+    ],
+    "ad_formats": [
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_086",
+    "name": "Campaign 86 - Pinheiros",
+    "budget_remaining": 24106.39,
+    "bid_price": 1.53,
+    "daily_budget": 2246.41,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5629,
+        "lon": -46.6902
+      },
+      "radius_km": 3.08
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.621,
+          "lon": -46.702
+        },
+        "radius_km": 0.42
+      }
+    ],
+    "ad_formats": [
+      "banner",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_087",
+    "name": "Campaign 87 - Morumbi",
+    "budget_remaining": 24649.96,
+    "bid_price": 0.1,
+    "daily_budget": 3469.04,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.621,
+        "lon": -46.702
+      },
+      "radius_km": 5.17
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "native",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_088",
+    "name": "Campaign 88 - Tatuape",
+    "budget_remaining": 11112.87,
+    "bid_price": 1.76,
+    "daily_budget": 2068.18,
+    "targeting": {
+      "type": "multi_radius",
+      "targets": [
+        {
+          "center": {
+            "lat": -23.567,
+            "lon": -46.689
+          },
+          "radius_km": 1.84
+        },
+        {
+          "center": {
+            "lat": -23.6528,
+            "lon": -46.7083
+          },
+          "radius_km": 2.99
+        },
+        {
+          "center": {
+            "lat": -23.5056,
+            "lon": -46.6289
+          },
+          "radius_km": 2.09
+        }
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_089",
+    "name": "Campaign 89 - Berrini",
+    "budget_remaining": 21186.86,
+    "bid_price": 2.18,
+    "daily_budget": 4693.53,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.602381,
+          -46.6933
+        ],
+        [
+          -23.606575,
+          -46.68225
+        ],
+        [
+          -23.6167,
+          -46.677673
+        ],
+        [
+          -23.626825,
+          -46.68225
+        ],
+        [
+          -23.631019,
+          -46.6933
+        ],
+        [
+          -23.626825,
+          -46.70435
+        ],
+        [
+          -23.6167,
+          -46.708927
+        ],
+        [
+          -23.606575,
+          -46.70435
+        ],
+        [
+          -23.602381,
+          -46.6933
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "interstitial",
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_090",
+    "name": "Campaign 90 - Vila Madalena",
+    "budget_remaining": 35052.52,
+    "bid_price": 1.22,
+    "daily_budget": 776.68,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.545887,
+          -46.6917
+        ],
+        [
+          -23.555501,
+          -46.677265
+        ],
+        [
+          -23.571056,
+          -46.682779
+        ],
+        [
+          -23.571056,
+          -46.700621
+        ],
+        [
+          -23.555501,
+          -46.706135
+        ],
+        [
+          -23.545887,
+          -46.6917
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_091",
+    "name": "Campaign 91 - Vila Olimpia",
+    "budget_remaining": 23575.22,
+    "bid_price": 1.04,
+    "daily_budget": 2286.01,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.573165,
+          -46.6863
+        ],
+        [
+          -23.589496,
+          -46.661771
+        ],
+        [
+          -23.615921,
+          -46.67114
+        ],
+        [
+          -23.615921,
+          -46.70146
+        ],
+        [
+          -23.589496,
+          -46.710829
+        ],
+        [
+          -23.573165,
+          -46.6863
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.557369,
+            -46.6917
+          ],
+          [
+            -23.5598,
+            -46.689048
+          ],
+          [
+            -23.562231,
+            -46.6917
+          ],
+          [
+            -23.5598,
+            -46.694352
+          ],
+          [
+            -23.557369,
+            -46.6917
+          ]
+        ]
+      }
+    ],
+    "ad_formats": [
+      "native",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_092",
+    "name": "Campaign 92 - Jardins",
+    "budget_remaining": 20193.55,
+    "bid_price": 0.55,
+    "daily_budget": 2705.21,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.568,
+        "lon": -46.655
+      },
+      "radius_km": 7.87
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.58207,
+            -46.685
+          ],
+          [
+            -23.5858,
+            -46.680931
+          ],
+          [
+            -23.58953,
+            -46.685
+          ],
+          [
+            -23.5858,
+            -46.689069
+          ],
+          [
+            -23.58207,
+            -46.685
+          ]
+        ]
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5858,
+          "lon": -46.685
+        },
+        "radius_km": 1.33
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.6167,
+          "lon": -46.6933
+        },
+        "radius_km": 0.73
+      }
+    ],
+    "ad_formats": [
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_093",
+    "name": "Campaign 93 - Morumbi",
+    "budget_remaining": 36660.56,
+    "bid_price": 1.76,
+    "daily_budget": 3122.82,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.621,
+        "lon": -46.702
+      },
+      "radius_km": 1.36
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5917,
+          "lon": -46.6936
+        },
+        "radius_km": 1.42
+      }
+    ],
+    "ad_formats": [
+      "banner",
+      "video",
+      "interstitial"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_094",
+    "name": "Campaign 94 - Berrini",
+    "budget_remaining": 13191.02,
+    "bid_price": 0.86,
+    "daily_budget": 3195.54,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.6167,
+        "lon": -46.6933
+      },
+      "radius_km": 0.84
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner",
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_095",
+    "name": "Campaign 95 - Moema",
+    "budget_remaining": 28985.31,
+    "bid_price": 2.22,
+    "daily_budget": 3839.47,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.573769,
+          -46.6667
+        ],
+        [
+          -23.582418,
+          -46.643912
+        ],
+        [
+          -23.6033,
+          -46.634472
+        ],
+        [
+          -23.624182,
+          -46.643912
+        ],
+        [
+          -23.632831,
+          -46.6667
+        ],
+        [
+          -23.624182,
+          -46.689488
+        ],
+        [
+          -23.6033,
+          -46.698928
+        ],
+        [
+          -23.582418,
+          -46.689488
+        ],
+        [
+          -23.573769,
+          -46.6667
+        ]
+      ]
+    },
+    "exclusions": [
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.586007,
+            -46.6936
+          ],
+          [
+            -23.5917,
+            -46.687388
+          ],
+          [
+            -23.597393,
+            -46.6936
+          ],
+          [
+            -23.5917,
+            -46.699812
+          ],
+          [
+            -23.586007,
+            -46.6936
+          ]
+        ]
+      },
+      {
+        "type": "polygon",
+        "coords": [
+          [
+            -23.541922,
+            -46.6333
+          ],
+          [
+            -23.5505,
+            -46.623942
+          ],
+          [
+            -23.559078,
+            -46.6333
+          ],
+          [
+            -23.5505,
+            -46.642658
+          ],
+          [
+            -23.541922,
+            -46.6333
+          ]
+        ]
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5629,
+          "lon": -46.6902
+        },
+        "radius_km": 1.33
+      }
+    ],
+    "ad_formats": [
+      "banner",
+      "video",
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_096",
+    "name": "Campaign 96 - Santana",
+    "budget_remaining": 13274.7,
+    "bid_price": 2.01,
+    "daily_budget": 3409.77,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5056,
+        "lon": -46.6289
+      },
+      "radius_km": 9.89
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.6528,
+          "lon": -46.7083
+        },
+        "radius_km": 1.36
+      }
+    ],
+    "ad_formats": [
+      "banner"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_097",
+    "name": "Campaign 97 - Shopping Eldorado",
+    "budget_remaining": 15309.67,
+    "bid_price": 0.96,
+    "daily_budget": 3181.23,
+    "targeting": {
+      "type": "multi_radius",
+      "targets": [
+        {
+          "center": {
+            "lat": -23.4953,
+            "lon": -46.8428
+          },
+          "radius_km": 0.52
+        },
+        {
+          "center": {
+            "lat": -23.5968,
+            "lon": -46.6863
+          },
+          "radius_km": 2.0
+        },
+        {
+          "center": {
+            "lat": -23.568,
+            "lon": -46.655
+          },
+          "radius_km": 1.35
+        },
+        {
+          "center": {
+            "lat": -23.5875,
+            "lon": -46.6575
+          },
+          "radius_km": 2.35
+        }
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "video",
+      "native"
+    ],
+    "active": false
+  },
+  {
+    "campaign_id": "camp_098",
+    "name": "Campaign 98 - Santana",
+    "budget_remaining": 29527.11,
+    "bid_price": 0.94,
+    "daily_budget": 884.88,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5056,
+        "lon": -46.6289
+      },
+      "radius_km": 7.28
+    },
+    "exclusions": [
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5875,
+          "lon": -46.6575
+        },
+        "radius_km": 1.16
+      },
+      {
+        "type": "radius",
+        "center": {
+          "lat": -23.5056,
+          "lon": -46.6289
+        },
+        "radius_km": 0.47
+      }
+    ],
+    "ad_formats": [
+      "video"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_099",
+    "name": "Campaign 99 - Pinheiros",
+    "budget_remaining": 39106.98,
+    "bid_price": 1.0,
+    "daily_budget": 4645.58,
+    "targeting": {
+      "type": "radius",
+      "center": {
+        "lat": -23.5629,
+        "lon": -46.6902
+      },
+      "radius_km": 5.58
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner",
+      "video",
+      "native"
+    ],
+    "active": true
+  },
+  {
+    "campaign_id": "camp_100",
+    "name": "Campaign 100 - Tatuape",
+    "budget_remaining": 25082.36,
+    "bid_price": 0.89,
+    "daily_budget": 4554.2,
+    "targeting": {
+      "type": "polygon",
+      "coords": [
+        [
+          -23.499614,
+          -46.5769
+        ],
+        [
+          -23.529386,
+          -46.532202
+        ],
+        [
+          -23.577557,
+          -46.549275
+        ],
+        [
+          -23.577557,
+          -46.604525
+        ],
+        [
+          -23.529386,
+          -46.621598
+        ],
+        [
+          -23.499614,
+          -46.5769
+        ]
+      ]
+    },
+    "exclusions": [],
+    "ad_formats": [
+      "banner"
+    ],
+    "active": true
+  }
+]
