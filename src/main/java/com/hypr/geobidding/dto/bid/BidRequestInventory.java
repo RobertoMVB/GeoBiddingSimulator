@@ -1,7 +1,7 @@
 package com.hypr.geobidding.dto.bid;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.validation.constraints.NotBlank;
+import com.hypr.geobidding.domain.campaign.CampaignAdFormat;
 import jakarta.validation.constraints.NotNull;
 
 import java.math.BigDecimal;
@@ -14,7 +14,7 @@ public class BidRequestInventory {
 
     @NotNull
     @JsonProperty("ad_format")
-    private String adFormat;
+    private CampaignAdFormat adFormat;
 
     @NotNull
     @JsonProperty("floor_price")
@@ -28,11 +28,11 @@ public class BidRequestInventory {
         this.publisherId = publisherId;
     }
 
-    public String getAdFormat() {
+    public CampaignAdFormat getAdFormat() {
         return adFormat;
     }
 
-    public void setAdFormat(String adFormat) {
+    public void setAdFormat(CampaignAdFormat adFormat) {
         this.adFormat = adFormat;
     }
 

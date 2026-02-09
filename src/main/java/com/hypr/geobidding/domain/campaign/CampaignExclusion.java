@@ -1,23 +1,41 @@
 package com.hypr.geobidding.domain.campaign;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class CampaignExclusion {
-    private String type;
 
+    @JsonProperty("type")
+    private CampaignAreaType type;
+
+    @JsonProperty("center")
     private CampaignGeoPoint center;
+
+    @JsonProperty("radius_km")
     private Double radiusKm;
+
+    // vem do JSON como [[lat, lon], [lat, lon]]
 
     private List<List<Double>> coords;
 
-    public String getType() {
+    public CampaignAreaType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(CampaignAreaType type) {
         this.type = type;
     }
 
+    public CampaignGeoPoint getCenter() {
+        return center;
+    }
+
+    public void setCenter(CampaignGeoPoint center) {
+        this.center = center;
+    }
 
     public Double getRadiusKm() {
         return radiusKm;
@@ -35,11 +53,27 @@ public class CampaignExclusion {
         this.coords = coords;
     }
 
-    public CampaignGeoPoint getCenter() {
-        return center;
-    }
+    /**
+     * Converte [[lat, lon]] para List<CampaignGeoPoint>
+     */
+    public List<CampaignGeoPoint> getCampaignCoords() {
+        if (coords == null || coords.size() < 4) {
+            return Collections.emptyList();
+        }
 
-    public void setCenter(CampaignGeoPoint center) {
-        this.center = center;
+        List<CampaignGeoPoint> points = new ArrayList<>(coords.size());
+
+        for (List<Double> pair : coords) {
+            if (pair == null || pair.size() != 2) {
+                continue;
+            }
+
+            CampaignGeoPoint point = new CampaignGeoPoint();
+            point.setLat(pair.get(0));
+            point.setLon(pair.get(1));
+            points.add(point);
+        }
+
+        return points;
     }
 }

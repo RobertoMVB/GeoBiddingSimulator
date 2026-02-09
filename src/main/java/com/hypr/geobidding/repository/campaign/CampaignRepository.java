@@ -6,6 +6,7 @@ import com.hypr.geobidding.domain.campaign.Campaign;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Repository;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
@@ -21,15 +22,17 @@ public class CampaignRepository {
     }
 
     @PostConstruct
-    void load() throws Exception {
+    public void load() throws IOException {
         InputStream is = getClass()
                 .getClassLoader()
-                .getResourceAsStream("data/campaigns.json");
+                .getResourceAsStream("campaigns.json");
 
-        this.campaigns = objectMapper.readValue(
-                is,
-                new TypeReference<List<Campaign>>() {}
-        );
+        if (is == null) {
+            throw new IllegalStateException("campaigns.json não encontrado no classpath");
+        }
+
+        Campaign[] loaded = objectMapper.readValue(is, Campaign[].class);
+        this.campaigns = List.of(loaded);
     }
 
     public List<Campaign> findAll() {
