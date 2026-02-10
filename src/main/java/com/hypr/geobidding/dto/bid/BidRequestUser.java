@@ -1,5 +1,6 @@
 package com.hypr.geobidding.dto.bid;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotNull;
 
 public class BidRequestUser {
@@ -8,6 +9,9 @@ public class BidRequestUser {
     private Double lat;
     @NotNull
     private Double lon;
+
+    @JsonProperty("user_id")
+    private String userId;
 
     public Double getLat() {
         return lat;
@@ -25,4 +29,11 @@ public class BidRequestUser {
         this.lon = lon;
     }
 
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 }

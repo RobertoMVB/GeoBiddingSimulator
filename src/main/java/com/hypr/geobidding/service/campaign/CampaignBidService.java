@@ -77,7 +77,7 @@ public class CampaignBidService {
                         .filter(Campaign::isActive)
                         .filter(c -> c.getAdFormats() != null &&
                                 c.getAdFormats().stream()
-                                        .anyMatch(f -> f.equalsIgnoreCase(requestedFormat.name())))
+                                        .anyMatch(f -> f.name().equalsIgnoreCase(requestedFormat.name())))
                         .filter(c -> c.getBidPrice().compareTo(floorPrice) >= 0)
                         .filter(c -> matchesTargeting(userLat, userLon, c.getTargeting()))
                         .filter(c -> !isInsideAnyExclusion(userLat, userLon, c.getExclusions()))
