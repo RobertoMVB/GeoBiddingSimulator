@@ -1,8 +1,11 @@
 package com.hypr.geobidding.dto.bid;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
+
+import java.time.OffsetDateTime;
 
 public class BidRequest {
 
@@ -19,6 +22,11 @@ public class BidRequest {
     @Valid
     @JsonProperty("inventory")
     private BidRequestInventory bidRequestInventory;
+
+    @JsonProperty("device")
+    private BidRequestDevice device;
+
+    private String timestamp;
 
     public String getRequestId() {
         return requestId;
@@ -42,5 +50,21 @@ public class BidRequest {
 
     public void setBidRequestInventory(BidRequestInventory bidRequestInventory) {
         this.bidRequestInventory = bidRequestInventory;
+    }
+
+    public String getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public BidRequestDevice getDevice() {
+        return device;
+    }
+
+    public void setDevice(BidRequestDevice device) {
+        this.device = device;
     }
 }

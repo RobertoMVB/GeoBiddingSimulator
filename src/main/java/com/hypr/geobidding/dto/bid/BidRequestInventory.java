@@ -20,6 +20,8 @@ public class BidRequestInventory {
     @JsonProperty("floor_price")
     private BigDecimal floorPrice;
 
+    private String size;
+
     public String getPublisherId() {
         return publisherId;
     }
@@ -42,5 +44,13 @@ public class BidRequestInventory {
 
     public void setFloorPrice(BigDecimal floorPrice) {
         this.floorPrice = floorPrice;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
     }
 }
