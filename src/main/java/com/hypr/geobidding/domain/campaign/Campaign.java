@@ -26,7 +26,7 @@ public class Campaign {
     private List<CampaignExclusion> exclusions;
 
     @JsonProperty("ad_formats")
-    private List<String> adFormats;
+    private List<CampaignAdFormat> adFormats;
 
     private boolean active;
 
@@ -86,11 +86,11 @@ public class Campaign {
         this.exclusions = exclusions;
     }
 
-    public List<String> getAdFormats() {
+    public List<CampaignAdFormat> getAdFormats() {
         return adFormats;
     }
 
-    public void setAdFormats(List<String> adFormats) {
+    public void setAdFormats(List<CampaignAdFormat> adFormats) {
         this.adFormats = adFormats;
     }
 
