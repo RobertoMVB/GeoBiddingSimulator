@@ -1,0 +1,198 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > DummyRequestFactory</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.hypr.geobidding.bootstrap</a>
+</div>
+
+<h1>Coverage Summary for Class: DummyRequestFactory (com.hypr.geobidding.bootstrap)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">DummyRequestFactory</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    89.5%
+  </span>
+  <span class="absValue">
+    (17/19)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">DummyRequestFactory$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    90%
+  </span>
+  <span class="absValue">
+    (18/20)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.hypr.geobidding.bootstrap;
+&nbsp;
+&nbsp;import com.fasterxml.jackson.core.type.TypeReference;
+&nbsp;import com.fasterxml.jackson.databind.ObjectMapper;
+&nbsp;import com.hypr.geobidding.domain.campaign.CampaignAdFormat;
+&nbsp;import com.hypr.geobidding.dto.bid.BidRequest;
+&nbsp;import com.hypr.geobidding.dto.bid.BidRequestInventory;
+&nbsp;import com.hypr.geobidding.dto.bid.BidRequestUser;
+&nbsp;
+&nbsp;import java.io.InputStream;
+&nbsp;import java.math.BigDecimal;
+&nbsp;import java.util.List;
+&nbsp;
+&nbsp;public final class DummyRequestFactory {
+&nbsp;
+&nbsp;    private DummyRequestFactory() {}
+<b class="fc">&nbsp;    private static final ObjectMapper mapper = new ObjectMapper();</b>
+&nbsp;
+&nbsp;
+&nbsp;    public static BidRequest create() {
+<b class="fc">&nbsp;        BidRequest req = new BidRequest();</b>
+<b class="fc">&nbsp;        BidRequestUser reqUser = new BidRequestUser();</b>
+<b class="fc">&nbsp;        reqUser.setLat(-23.5505);</b>
+<b class="fc">&nbsp;        reqUser.setLon(-46.6333);</b>
+<b class="fc">&nbsp;        req.setBidRequestUser(reqUser);</b>
+<b class="fc">&nbsp;        BidRequestInventory reqInventory = new BidRequestInventory();</b>
+<b class="fc">&nbsp;        reqInventory.setAdFormat(CampaignAdFormat.NATIVE);</b>
+<b class="fc">&nbsp;        reqInventory.setPublisherId(&quot;pub_013&quot;);</b>
+<b class="fc">&nbsp;        reqInventory.setFloorPrice(BigDecimal.valueOf(1.50));</b>
+<b class="fc">&nbsp;        req.setBidRequestInventory(reqInventory);</b>
+<b class="fc">&nbsp;        return req;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public static List&lt;BidRequest&gt; createListFromJson() {
+<b class="fc">&nbsp;        try (InputStream is = DummyRequestFactory.class</b>
+<b class="fc">&nbsp;                .getClassLoader()</b>
+<b class="fc">&nbsp;                .getResourceAsStream(&quot;test_requests.json&quot;)) {</b>
+&nbsp;
+<b class="pc">&nbsp;            if (is == null) {</b>
+<b class="nc">&nbsp;                throw new IllegalStateException(&quot;requests.json não encontrado&quot;);</b>
+&nbsp;            }
+&nbsp;
+<b class="fc">&nbsp;            return mapper.readValue(is, new TypeReference&lt;List&lt;BidRequest&gt;&gt;() {});</b>
+&nbsp;        } catch (Exception e) {
+<b class="nc">&nbsp;            throw new RuntimeException(&quot;Erro ao criar dummy requests&quot;, e);</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2026-02-09 22:52</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > WarmupRunner</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.hypr.geobidding.bootstrap</a>
+</div>
+
+<h1>Coverage Summary for Class: WarmupRunner (com.hypr.geobidding.bootstrap)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">WarmupRunner</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    84.6%
+  </span>
+  <span class="absValue">
+    (11/13)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.hypr.geobidding.bootstrap;
+&nbsp;
+&nbsp;import com.hypr.geobidding.dto.bid.BidRequest;
+&nbsp;import com.hypr.geobidding.repository.campaign.CampaignRepository;
+&nbsp;import com.hypr.geobidding.service.campaign.CampaignBidService;
+&nbsp;import org.springframework.boot.ApplicationArguments;
+&nbsp;import org.springframework.boot.ApplicationRunner;
+&nbsp;import org.springframework.stereotype.Component;
+&nbsp;
+&nbsp;import java.util.List;
+&nbsp;
+&nbsp;@Component
+&nbsp;public class WarmupRunner implements ApplicationRunner {
+&nbsp;    private final CampaignRepository repository;
+&nbsp;    private final CampaignBidService bidService;
+&nbsp;
+&nbsp;    public WarmupRunner(CampaignRepository repository,
+<b class="fc">&nbsp;                        CampaignBidService bidService) {</b>
+<b class="fc">&nbsp;        this.repository = repository;</b>
+<b class="fc">&nbsp;        this.bidService = bidService;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public void run(ApplicationArguments args) {
+<b class="fc">&nbsp;        long start = System.currentTimeMillis();</b>
+<b class="fc">&nbsp;        repository.findAll().size();</b>
+<b class="fc">&nbsp;        BidRequest dummy = DummyRequestFactory.create();</b>
+&nbsp;
+&nbsp;        try {
+<b class="fc">&nbsp;            List&lt;BidRequest&gt; dummyBidRequests = DummyRequestFactory.createListFromJson();</b>
+<b class="fc">&nbsp;            for (BidRequest req : dummyBidRequests) {</b>
+<b class="fc">&nbsp;                bidService.decide(req);</b>
+&nbsp;            }
+<b class="fc">&nbsp;            long end = System.currentTimeMillis();</b>
+<b class="fc">&nbsp;            System.out.println(&quot;Warmup &quot; + (end - start) + &quot; ms&quot;);</b>
+&nbsp;        } catch (Exception e) {
+<b class="nc">&nbsp;            System.err.println(&quot;Warmup falhou, continuando app&quot;);</b>
+<b class="nc">&nbsp;            e.printStackTrace();</b>
+&nbsp;        }
+&nbsp;
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2026-02-09 22:52</div>
+</div>
+</body>
+</html>
