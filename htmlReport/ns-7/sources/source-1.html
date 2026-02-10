@@ -1,0 +1,285 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > CampaignBidService</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.hypr.geobidding.service.campaign</a>
+</div>
+
+<h1>Coverage Summary for Class: CampaignBidService (com.hypr.geobidding.service.campaign)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CampaignBidService</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (5/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    88%
+  </span>
+  <span class="absValue">
+    (22/25)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    98.1%
+  </span>
+  <span class="absValue">
+    (53/54)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">CampaignBidService$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (6/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    88%
+  </span>
+  <span class="absValue">
+    (22/25)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    98.2%
+  </span>
+  <span class="absValue">
+    (54/55)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.hypr.geobidding.service.campaign;
+&nbsp;
+&nbsp;import com.hypr.geobidding.domain.campaign.*;
+&nbsp;import com.hypr.geobidding.dto.bid.*;
+&nbsp;import com.hypr.geobidding.repository.campaign.CampaignRepository;
+&nbsp;import com.hypr.geobidding.utils.geo.*;
+&nbsp;import org.springframework.stereotype.Service;
+&nbsp;
+&nbsp;import java.math.BigDecimal;
+&nbsp;import java.util.List;
+&nbsp;
+&nbsp;import static com.hypr.geobidding.domain.campaign.CampaignAreaType.*;
+&nbsp;
+&nbsp;@Service
+&nbsp;public class CampaignBidService {
+&nbsp;
+&nbsp;    private final CampaignRepository campaignRepository;
+&nbsp;
+<b class="fc">&nbsp;    public CampaignBidService(CampaignRepository campaignRepository) {</b>
+<b class="fc">&nbsp;        this.campaignRepository = campaignRepository;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public BidResponse decide(BidRequest request) {
+&nbsp;
+<b class="fc">&nbsp;        double userLat = request.getBidRequestUser().getLat();</b>
+<b class="fc">&nbsp;        double userLon = request.getBidRequestUser().getLon();</b>
+<b class="fc">&nbsp;        BigDecimal floorPrice = request.getBidRequestInventory().getFloorPrice();</b>
+<b class="fc">&nbsp;        CampaignAdFormat requestedFormat = request.getBidRequestInventory().getAdFormat();</b>
+<b class="fc">&nbsp;        Campaign winenrCampaign = null;</b>
+&nbsp;
+<b class="fc">&nbsp;        winenrCampaign =</b>
+<b class="fc">&nbsp;                campaignRepository.findAll()</b>
+<b class="fc">&nbsp;                        .parallelStream()</b>
+<b class="fc">&nbsp;                        .filter(Campaign::isActive)</b>
+<b class="pc">&nbsp;                        .filter(c -&gt; c.getAdFormats() != null &amp;&amp;</b>
+<b class="fc">&nbsp;                                c.getAdFormats().stream()</b>
+<b class="fc">&nbsp;                                        .anyMatch(f -&gt; f.name().equalsIgnoreCase(requestedFormat.name())))</b>
+<b class="fc">&nbsp;                        .filter(c -&gt; c.getBidPrice().compareTo(floorPrice) &gt;= 0)</b>
+<b class="fc">&nbsp;                        .filter(c -&gt; matchesTargeting(userLat, userLon, c.getTargeting()))</b>
+<b class="fc">&nbsp;                        .filter(c -&gt; !isInsideAnyExclusion(userLat, userLon, c.getExclusions()))</b>
+<b class="fc">&nbsp;                        .max((a, b) -&gt; a.getBidPrice().compareTo(b.getBidPrice()))</b>
+<b class="fc">&nbsp;                        .orElse(null);</b>
+&nbsp;
+<b class="fc">&nbsp;        if (winenrCampaign == null) {</b>
+<b class="fc">&nbsp;            BidResponse response = new BidResponse();</b>
+<b class="fc">&nbsp;            response.setRequestId(request.getRequestId());</b>
+<b class="fc">&nbsp;            response.setDecision(BidDecision.NO_BID);</b>
+<b class="fc">&nbsp;            return response;</b>
+&nbsp;        }
+&nbsp;
+<b class="fc">&nbsp;        BidResponse response = new BidResponse();</b>
+<b class="fc">&nbsp;        response.setRequestId(request.getRequestId());</b>
+<b class="fc">&nbsp;        response.setDecision(BidDecision.BID);</b>
+<b class="fc">&nbsp;        response.setBidPrice(winenrCampaign.getBidPrice());</b>
+<b class="fc">&nbsp;        response.setCampaignId(winenrCampaign.getCampaignId());</b>
+<b class="fc">&nbsp;        return response;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    // --------- helpers ---------
+&nbsp;
+&nbsp;    private boolean matchesTargeting(
+&nbsp;            double lat,
+&nbsp;            double lon,
+&nbsp;            CampaignTargeting targeting
+&nbsp;    ) {
+<b class="pc">&nbsp;        if (targeting == null) return false;</b>
+&nbsp;
+<b class="pc">&nbsp;        switch (targeting.getType()) {</b>
+&nbsp;            case RADIUS:
+<b class="fc">&nbsp;                return GeoRadiusUtils.isPointInsideRadius(</b>
+&nbsp;                        lat, lon,
+<b class="fc">&nbsp;                        targeting.getCenter().getLat(),</b>
+<b class="fc">&nbsp;                        targeting.getCenter().getLon(),</b>
+<b class="fc">&nbsp;                        targeting.getRadiusKm()</b>
+&nbsp;                );
+&nbsp;
+&nbsp;            case MULTI_RADIUS:
+<b class="fc">&nbsp;                return GeoMultiRadiusUtils.isPointInsideAnyRadius(</b>
+&nbsp;                        lat, lon, targeting
+&nbsp;                );
+&nbsp;
+&nbsp;            case POLYGON:
+<b class="fc">&nbsp;                return GeoPolygonUtils.isPointInsidePolygon(</b>
+<b class="fc">&nbsp;                        lat, lon, targeting.getCampaignCoords()</b>
+&nbsp;                );
+&nbsp;
+&nbsp;            default:
+<b class="nc">&nbsp;                return false;</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    private boolean isInsideAnyExclusion(
+&nbsp;            double lat,
+&nbsp;            double lon,
+&nbsp;            List&lt;CampaignExclusion&gt; exclusions
+&nbsp;    ) {
+<b class="fc">&nbsp;        if (exclusions == null || exclusions.isEmpty()) {</b>
+<b class="fc">&nbsp;            return false;</b>
+&nbsp;        }
+&nbsp;
+<b class="fc">&nbsp;        for (CampaignExclusion exclusion : exclusions) {</b>
+&nbsp;
+<b class="pc">&nbsp;            if (exclusion.getType() == null) {</b>
+&nbsp;                continue;
+&nbsp;            }
+&nbsp;
+&nbsp;//            System.out.println(&quot;Exclusion :  &quot; + exclusion.toString());
+&nbsp;
+<b class="pc">&nbsp;            switch (exclusion.getType()) {</b>
+&nbsp;
+&nbsp;                case RADIUS:
+<b class="fc">&nbsp;                    if (GeoRadiusUtils.isPointInsideRadius(</b>
+&nbsp;                            lat, lon,
+<b class="fc">&nbsp;                            exclusion.getCenter().getLat(),</b>
+<b class="fc">&nbsp;                            exclusion.getCenter().getLon(),</b>
+<b class="fc">&nbsp;                            exclusion.getRadiusKm()</b>
+&nbsp;                    )) {
+<b class="fc">&nbsp;                        return true;</b>
+&nbsp;                    }
+&nbsp;                    break;
+&nbsp;
+&nbsp;                case POLYGON:
+<b class="fc">&nbsp;                    if (GeoPolygonUtils.isPointInsidePolygon(</b>
+&nbsp;                            lat, lon,
+<b class="fc">&nbsp;                            exclusion.getCampaignCoords()</b>
+&nbsp;                    )) {
+<b class="fc">&nbsp;                        return true;</b>
+&nbsp;                    }
+&nbsp;                    break;
+&nbsp;            }
+&nbsp;        }
+<b class="fc">&nbsp;        return false;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2026-02-09 22:52</div>
+</div>
+</body>
+</html>

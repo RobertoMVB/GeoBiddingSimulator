@@ -1,0 +1,209 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > Campaign</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.hypr.geobidding.domain.campaign</a>
+</div>
+
+<h1>Coverage Summary for Class: Campaign (com.hypr.geobidding.domain.campaign)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Campaign</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (19/19)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (19/19)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.hypr.geobidding.domain.campaign;
+&nbsp;
+&nbsp;import com.fasterxml.jackson.annotation.JsonProperty;
+&nbsp;
+&nbsp;import java.math.BigDecimal;
+&nbsp;import java.util.List;
+&nbsp;
+<b class="fc">&nbsp;public class Campaign {</b>
+&nbsp;
+&nbsp;    @JsonProperty(&quot;campaign_id&quot;)
+&nbsp;    private String campaignId;
+&nbsp;
+&nbsp;    private String name;
+&nbsp;
+&nbsp;    @JsonProperty(&quot;budget_remaining&quot;)
+&nbsp;    private BigDecimal budgetRemaining;
+&nbsp;
+&nbsp;    @JsonProperty(&quot;bid_price&quot;)
+&nbsp;    private BigDecimal bidPrice;
+&nbsp;
+&nbsp;    @JsonProperty(&quot;daily_budget&quot;)
+&nbsp;    private BigDecimal dailyBudget;
+&nbsp;
+&nbsp;    private CampaignTargeting targeting;
+&nbsp;
+&nbsp;    private List&lt;CampaignExclusion&gt; exclusions;
+&nbsp;
+&nbsp;    @JsonProperty(&quot;ad_formats&quot;)
+&nbsp;    private List&lt;CampaignAdFormat&gt; adFormats;
+&nbsp;
+&nbsp;    private boolean active;
+&nbsp;
+&nbsp;    public String getCampaignId() {
+<b class="fc">&nbsp;        return campaignId;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setCampaignId(String campaignId) {
+<b class="fc">&nbsp;        this.campaignId = campaignId;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String getName() {
+<b class="fc">&nbsp;        return name;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setName(String name) {
+<b class="fc">&nbsp;        this.name = name;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public BigDecimal getBudgetRemaining() {
+<b class="fc">&nbsp;        return budgetRemaining;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setBudgetRemaining(BigDecimal budgetRemaining) {
+<b class="fc">&nbsp;        this.budgetRemaining = budgetRemaining;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public BigDecimal getBidPrice() {
+<b class="fc">&nbsp;        return bidPrice;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setBidPrice(BigDecimal bidPrice) {
+<b class="fc">&nbsp;        this.bidPrice = bidPrice;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public BigDecimal getDailyBudget() {
+<b class="fc">&nbsp;        return dailyBudget;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setDailyBudget(BigDecimal dailyBudget) {
+<b class="fc">&nbsp;        this.dailyBudget = dailyBudget;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public CampaignTargeting getTargeting() {
+<b class="fc">&nbsp;        return targeting;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setTargeting(CampaignTargeting targeting) {
+<b class="fc">&nbsp;        this.targeting = targeting;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public List&lt;CampaignExclusion&gt; getExclusions() {
+<b class="fc">&nbsp;        return exclusions;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setExclusions(List&lt;CampaignExclusion&gt; exclusions) {
+<b class="fc">&nbsp;        this.exclusions = exclusions;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public List&lt;CampaignAdFormat&gt; getAdFormats() {
+<b class="fc">&nbsp;        return adFormats;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setAdFormats(List&lt;CampaignAdFormat&gt; adFormats) {
+<b class="fc">&nbsp;        this.adFormats = adFormats;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public boolean isActive() {
+<b class="fc">&nbsp;        return active;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setActive(boolean active) {
+<b class="fc">&nbsp;        this.active = active;</b>
+&nbsp;    }
+&nbsp;}
+&nbsp;
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2026-02-09 22:52</div>
+</div>
+</body>
+</html>

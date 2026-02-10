@@ -28,49 +28,6 @@ public class CampaignBidService {
         CampaignAdFormat requestedFormat = request.getBidRequestInventory().getAdFormat();
         Campaign winenrCampaign = null;
 
-//        FOR usado para debug de filtro por filtro
-//        int count = 0;
-//        for (Campaign campaign : campaignRepository.findAll()) {
-////            count++;
-////            System.out.println("Campanha : " + count + " id :" + campaign.getCampaignId());
-////            System.out.println("Nome : " + campaign.getName());
-////            System.out.println("Preço : " + campaign.getBidPrice());
-////            System.out.println("Ativa : " + campaign.isActive());
-////            System.out.println("Formato  : " + campaign.getAdFormats());
-//
-//
-//            // 1️⃣ campanha ativa
-//            if (!campaign.isActive()) {
-//                continue;
-//            }
-//
-//            if (campaign.getAdFormats() == null ||
-//                    campaign.getAdFormats().stream()
-//                            .noneMatch(f -> f.equalsIgnoreCase(requestedFormat.name()))
-//            ) {
-//                continue;
-//            }
-//
-//            if (campaign.getBidPrice().compareTo(floorPrice) < 0) {
-//                continue;
-//            }
-//
-//            // 3️⃣ usuário dentro da área da campanha
-//            if (!matchesTargeting(userLat, userLon, campaign.getTargeting())) {
-//                continue;
-//            }
-//
-//            // 4️⃣ usuário NÃO pode estar em área de exclusão
-//            if (isInsideAnyExclusion(userLat, userLon, campaign.getExclusions())) {
-//                continue;
-//            }
-//
-//            if (winenrCampaign == null ||
-//                    campaign.getBidPrice().compareTo(winenrCampaign.getBidPrice()) > 0) {
-//                winenrCampaign = campaign;
-//            }
-//        }
-
         winenrCampaign =
                 campaignRepository.findAll()
                         .parallelStream()
