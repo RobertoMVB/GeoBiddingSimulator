@@ -1,0 +1,143 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > GeoMultiRadiusUtils</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.hypr.geobidding.utils.geo</a>
+</div>
+
+<h1>Coverage Summary for Class: GeoMultiRadiusUtils (com.hypr.geobidding.utils.geo)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">GeoMultiRadiusUtils</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/7)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.hypr.geobidding.utils.geo;
+&nbsp;
+&nbsp;import com.hypr.geobidding.domain.campaign.CampaignRadiusTarget;
+&nbsp;import com.hypr.geobidding.domain.campaign.CampaignTargeting;
+&nbsp;
+&nbsp;public final class GeoMultiRadiusUtils {
+&nbsp;
+&nbsp;    private GeoMultiRadiusUtils() {}
+&nbsp;
+&nbsp;    public static boolean isPointInsideAnyRadius(
+&nbsp;            double userLat,
+&nbsp;            double userLon,
+&nbsp;            CampaignTargeting campaignTargeting
+&nbsp;    ) {
+<b class="fc">&nbsp;        if (campaignTargeting == null || campaignTargeting.getTargets() == null) {</b>
+<b class="fc">&nbsp;            return false;</b>
+&nbsp;        }
+&nbsp;
+<b class="fc">&nbsp;        return campaignTargeting.getTargets().stream()</b>
+<b class="fc">&nbsp;                .anyMatch(campaignTarget -&gt; GeoRadiusUtils.isPointInsideRadius(</b>
+&nbsp;                        userLat, userLon,
+<b class="fc">&nbsp;                        campaignTarget.getCenter().getLat(),</b>
+<b class="fc">&nbsp;                        campaignTarget.getCenter().getLon(),</b>
+<b class="fc">&nbsp;                        campaignTarget.getRadiusKm()</b>
+&nbsp;                ));
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2026-02-09 22:52</div>
+</div>
+</body>
+</html>
